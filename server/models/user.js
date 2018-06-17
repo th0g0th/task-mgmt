@@ -3,12 +3,16 @@ var mongoose = require('mongoose'),
     passportLocalMongoose = require('passport-local-mongoose');
 
 var userSchema = new Schema({
-    username: String,
-    password: String
+    role: {
+        type: String,
+        unique: String,
+        default: 'OPERATOR'
+    }
 });
 
 userSchema.plugin(passportLocalMongoose, {
     usernameUnique: false,
+    selectFields: 'username role',
     findByUsername: (model, queryParameters) => {
         return model.findOne(queryParameters);
     }
