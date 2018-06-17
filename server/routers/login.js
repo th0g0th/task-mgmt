@@ -8,10 +8,10 @@ loginRouter.post('/api/login', (req, res, next) => {
     // generate the authenticate method and pass the req/res
     passport.authenticate('local', function (err, user, info) {
         if (err) {
-            return res.json(err);
+            return res.status(500).json(err);
         }
         if (!user) {
-            return res.send(null);
+            return res.json(info);
         }
         return res.send('hahaha');
     })(req, res, next);
