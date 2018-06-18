@@ -3,16 +3,14 @@ var config = require('./config/config');
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var expressSession = require('express-session');
 var morgan = require('morgan');
 var path = require('path');
 var cors = require('cors');
-var corsOption = {
-    origin: '//*:3000/api/*',
-    optionsSuccessStatus: 200
-}
 var User = require('./models/user');
 var mongoose = require('mongoose');
 var loginRouter = require('./routers/login');
+var taskRouter = require('./routers/task');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
@@ -36,20 +34,21 @@ passport.deserializeUser(User.deserializeUser());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors(corsOption));
-app.use(express.static(path.join(__dirname, 'dist')));
-app.use(require('express-session')({
+app.use(cookieParser());
+app.use(cors());
+app.use(express.static(path.join(__dirname, '../dist')));
+app.use(expressSession({
     secret: config.secretKey,
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: true
 }));
-app.use(cookieParser());
 
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Router
 app.use(loginRouter);
+app.use(taskRouter);
 
 // Export module
 module.exports = app;
