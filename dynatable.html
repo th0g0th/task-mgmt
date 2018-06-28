@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.js"></script>
+    <title>Title of the document</title>
+    <script>
+        jQuery(document).ready(($) => {
+            $('#my-table').dynatable({
+                features: {
+                    paginate: true,
+                    search: false,
+                    recordCount: true,
+                    sort: false,
+                    perPageSelect: false
+                },
+                dataset: {
+                    perPageDefault: 20
+                },
+            });
+        });
+    </script>
+    <style>
+        thead {
+            color: green;
+        }
+
+        tbody {
+            color: blue;
+        }
+
+        tfoot {
+            color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        My JS code starts on line 1712
+    </p>
+    <p>
+        My CSS code starts on line 74
+    </p>
+    <br>
+
+    <div style="width:600px;">
+        <table id="my-table" style="width:100%; text-align:left;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Hobby</th>
+                    <th>Favorite Music</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Roller Skating</td>
+                    <td>Disco</td>
+                </tr>
+                <tr>
+                    <td>Helen</td>
+                    <td>Rock Climbing</td>
+                    <td>Alternative</td>
+                </tr>
+                <tr>
+                    <td>Glen</td>
+                    <td>Traveling</td>
+                    <td>Classical</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <table id="my-table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+        </tbody>
+    </table> -->
+</body>
+
+</html>
